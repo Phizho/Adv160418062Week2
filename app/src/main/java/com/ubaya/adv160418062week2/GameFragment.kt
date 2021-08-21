@@ -43,7 +43,7 @@ class GameFragment : Fragment() {
                 nilai += 1
                 generateSoal()
             } else {
-                val action = GameFragmentDirections.actionMainFragment()
+                val action = GameFragmentDirections.actionResultFragment(nilai)
                 Navigation.findNavController(it).navigate(action)
             }
         }
